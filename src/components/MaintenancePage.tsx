@@ -26,7 +26,7 @@ export default function MaintenancePage() {
 
         {/* Description */}
         <p className="mb-8 text-lg text-slate-300">
-          We're currently performing scheduled maintenance to improve your experience. We'll be back online shortly.
+          We&apos;re currently performing scheduled maintenance to improve your experience. We&apos;ll be back online shortly.
         </p>
 
         {/* Contact Information */}
@@ -36,7 +36,7 @@ export default function MaintenancePage() {
           </p>
           <a
             href="mailto:info@inventive-es.com"
-            className="inline-flex text-lg font-semibold text-amber-400 hover:text-amber-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
+            className="inline-flex text-lg font-semibold text-amber-400 hover:text-amber-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-800"
           >
             info@inventive-es.com
           </a>
