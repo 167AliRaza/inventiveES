@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import MaintenancePage from "@/components/MaintenancePage";
 import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -33,6 +34,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Check if maintenance mode is enabled
+  const isMaintenanceMode = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true";
+
+  if (isMaintenanceMode) {
+    return (
+      <html lang="en">
+        <body className="bg-slate-50 text-slate-900">
+          <MaintenancePage />
+        </body>
+      </html>
+    );
+  }
+
   return (
     <html lang="en">
       <body className="bg-slate-50 text-slate-900">
